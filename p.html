@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Priscila Eloa Santiago da Silva</title>
+  <meta name="description" content="Portfólio pessoal com HTML + Tailwind CSS — apresentação, habilidades, formação, projetos e contato." />
+  <!-- Tailwind via CDN (sem JavaScript extra) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body class="antialiased text-slate-800 bg-slate-50">
+  <!-- Cabeçalho / Hero -->
+  <header class="bg-white shadow-sm sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-4">
+          <div class="rounded-full bg-indigo-600 w-12 h-12 flex items-center justify-center text-white font-semibold text-lg">PE</div>
+          <div>
+            <h1 class="text-lg font-semibold">Priscila Eloa Santiago da Silva</h1>
+            <p class="text-sm text-slate-500">Desenvolvedora Front‑end & Designer de Interfaces</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation" class="hidden md:block">
+          <ul class="flex gap-6 text-sm">
+            <li><a class="hover:text-indigo-600" href="#about">Sobre</a></li>
+            <li><a class="hover:text-indigo-600" href="#skills">Habilidades</a></li>
+            <li><a class="hover:text-indigo-600" href="#education">Formação</a></li>
+            <li><a class="hover:text-indigo-600" href="#projects">Projetos</a></li>
+            <li><a class="hover:text-indigo-600" href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="md:hidden">
+          <!-- Menu simples para mobile usando âncoras (sem JS) -->
+          <details class="[&>summary::-webkit-details-marker]:hidden">
+            <summary class="cursor-pointer px-3 py-2 rounded-md hover:bg-slate-100">Menu ▾</summary>
+            <ul class="mt-2 p-3 bg-white rounded-md shadow-sm space-y-2">
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+              <li><a href="#education">Formação</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <!-- Hero / Apresentação rápida -->
+    <section id="home" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-12">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Olá — eu sou a Priscila.</h2>
+        <p class="mt-4 text-lg text-slate-600">Faço interfaces acessíveis e responsivas usando HTML e Tailwind. Gosto de transformar problemas complexos em experiências simples e bonitas.</p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="inline-block px-5 py-3 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700">Ver projetos</a>
+          <a href="#contact" class="inline-block px-5 py-3 rounded-lg border border-slate-200 hover:bg-slate-100">Entrar em contato</a>
+        </div>
+
+        <ul class="mt-6 text-sm text-slate-500 space-y-1">
+          <li><strong>Local:</strong> São Paulo, Brasil</li>
+          <li><strong>Disponibilidade:</strong> Freelancer / Projeto parcial</li>
+        </ul>
+      </div>
+
+      <aside class="flex justify-center md:justify-end">
+        <figure class="w-48 h-48 rounded-2xl overflow-hidden ring-1 ring-slate-200">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Avatar de Priscila" class="w-full h-full object-cover">
+        </figure>
+      </aside>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="about" class="bg-white p-6 rounded-xl shadow-sm mb-8">
+      <h3 class="text-2xl font-semibold">Sobre mim</h3>
+      <p class="mt-3 text-slate-600">Sou estudante e entusiasta de front‑end com foco em acessibilidade e boas práticas HTML/CSS. Gosto de prototipar interfaces limpas e performance otimizada. Tenho experiência com projetos acadêmicos e pessoais que envolvem design responsivo e layouts modulares.</p>
+      <p class="mt-3 text-slate-500 text-sm">(Texto de exemplo — personalize com sua história, interesses e stack.)</p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="mb-8">
+      <h3 class="text-2xl font-semibold mb-4">Habilidades</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Cada cartão descreve uma skill; uso de flex e gap para alinhamento -->
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium">HTML Semântico</h4>
+          <p class="text-sm text-slate-500 mt-1">Uso correto de header, main, section, article e aria quando necessário.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium">Tailwind CSS</h4>
+          <p class="text-sm text-slate-500 mt-1">Layouts responsivos, utilitários, componentes reutilizáveis e classes condicionais (md:, lg:).</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium">Design Responsivo</h4>
+          <p class="text-sm text-slate-500 mt-1">Grid, Flexbox e breakpoints para adaptar conteúdo a telas.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm">
+          <h4 class="font-medium">Acessibilidade</h4>
+          <p class="text-sm text-slate-500 mt-1">Contraste, labels, navegação por teclado e roles semânticos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação e Experiências -->
+    <section id="education" class="bg-white p-6 rounded-xl shadow-sm mb-8">
+      <h3 class="text-2xl font-semibold">Formação & Experiências</h3>
+      <ol class="mt-4 space-y-4 list-decimal list-inside text-slate-600">
+        <li>
+          <strong>Curso / Instituição</strong> — <span class="text-sm text-slate-500">Nome do curso, período (ex.: 2022–presente)</span>
+          <div class="text-sm mt-1">Atividades: desenvolvimento de páginas, projetos acadêmicos, estudo de UX/UI.</div>
+        </li>
+        <li>
+          <strong>Curso Online</strong> — <span class="text-sm text-slate-500">Plataforma, certificado (ano)</span>
+          <div class="text-sm mt-1">Ex.: Curso de HTML/CSS avançado, Tailwind CSS.</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="mb-8">
+      <h3 class="text-2xl font-semibold mb-4">Projetos</h3>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <article class="p-6 bg-white rounded-xl shadow-sm">
+          <h4 class="text-xl font-medium">Projeto 1 — Landing Responsiva</h4>
+          <p class="mt-2 text-slate-600">Uma landing page responsiva criada com HTML semântico e Tailwind. Foco em carregamento rápido e boa experiência mobile.</p>
+          <p class="mt-3 text-sm text-slate-500">Link: <a href="#" class="hover:underline">github.com/seuusuario/projeto-landing</a></p>
+        </article>
+
+        <article class="p-6 bg-white rounded-xl shadow-sm">
+          <h4 class="text-xl font-medium">Projeto 2 — Portfólio Pessoal</h4>
+          <p class="mt-2 text-slate-600">Este portfólio (exemplo) mostra como estruturar seções sem JavaScript e usar utilitários Tailwind para responsividade.</p>
+          <p class="mt-3 text-sm text-slate-500">Link: <a href="#" class="hover:underline">github.com/seuusuario/portfolio</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="text-2xl font-semibold">Contato</h3>
+      <p class="mt-3 text-slate-600">Vou adorar conversar sobre projetos, estágios ou colaborações.</p>
+
+      <dl class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+        <div>
+          <dt class="font-medium">Email</dt>
+          <dd class="text-slate-500"> <a href="mailto:seu.email@exemplo.com" class="hover:underline">seu.email@exemplo.com</a></dd>
+        </div>
+        <div>
+          <dt class="font-medium">GitHub</dt>
+          <dd class="text-slate-500"><a href="https://github.com/seuusuario" class="hover:underline" target="_blank" rel="noopener">github.com/seuusuario</a></dd>
+        </div>
+        <div>
+          <dt class="font-medium">LinkedIn</dt>
+          <dd class="text-slate-500"><a href="https://linkedin.com/in/seuusuario" class="hover:underline" target="_blank" rel="noopener">linkedin.com/in/seuusuario</a></dd>
+        </div>
+        <div>
+          <dt class="font-medium">Telefone (opcional)</dt>
+          <dd class="text-slate-500">+55 11 9XXXX-XXXX</dd>
+        </div>
+      </dl>
+
+      <p class="mt-6 text-sm text-slate-500">Também disponível para freelances e trabalhos remotos.</p>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between">
+      <span>© "Priscila Eloa" — <span class="hidden sm:inline">Feito com HTML + Tailwind CSS</span></span>
+      <nav class="mt-3 md:mt-0">
+        <a href="#" class="hover:underline mr-4">Política de privacidade</a>
+        <a href="#" class="hover:underline">Termos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Observações (comentários no HTML explicando escolhas de Tailwind) -->
+  <!--
+    - Usei container max-w-6xl + mx-auto para manter o layout centralizado.
+    - grid + md:grid-cols-3 para adaptar hero entre mobile e desktop.
+    - classes como p-6, rounded-xl e shadow-sm para dar espaçamento, cantos e leve elevação.
+    - textos com text-slate-* para consistência de cor, e hover: para micro-interações sem JS.
+    - details/summary para um menu mobile simples e sem JavaScript.
+  -->
+</body>
+</html>
